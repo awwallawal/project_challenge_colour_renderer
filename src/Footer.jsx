@@ -1,9 +1,10 @@
 import React from 'react'
 
-function Footer() {
+function Footer({ developer, productionYear }) {
+  
   return (
     <footer className='Footer'>
-      <small>This is the footer</small>
+      <small>Copyright &copy; {developer} Development {productionYear}</small>
     </footer>
   )
 }

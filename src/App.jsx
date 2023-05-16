@@ -5,12 +5,23 @@ import Footer from './Footer'
 import './App.css'
 
 function App() {
+  
+  
+  
+  const title = "Colour Renderer";
+  const developer = "Awwal";
+  const productionYear = new Date().getFullYear();
 
   return (
     <div className='App'>
-      <Header />
+      <Header
+        title = {title}
+      />
       <MainContent />
-      <Footer />
+      <Footer 
+        developer = {developer}
+        productionYear = {productionYear}
+      />
     </div>
   )
 }

@@ -16,35 +16,78 @@
 
 body{
   font-family: Roboto, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App{
+.App {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  max-width: 550px;
-  width: 100%;
-}
+  height: 100vh; 
+  width: 100%; 
+  max-width: 500px;
+  margin: auto;
+ }
 
 .Header{
   background-color: royalblue;
   width: 100%;
+  max-width: 550px;
+  text-align: start;
+  padding: 10px;
+  color: whitesmoke;
+  text-shadow: 0 0 1px red;
 }
 
 .MainContent{
-  background-color: papayawhip;
   width: 100%;
+  max-width: 550px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: 2px solid mediumblue;
+  border-top: none;
+  border-bottom: none;
+
 }
 
 .Footer{
   background-color: magenta;
   width: 100%;
+  max-width: 550px;
+  text-align: center;
+  padding: 5px;
+}
+
+small{
+  color: white;
+  text-shadow: 0 0 2px black;
+}
+
+
+.colour-box{
+  width: 250px;
+  height: 250px;
+  border: 2px solid gray;
+  border-radius: 8px;
+  box-shadow: 3px 3px 10px rgba(90, 89, 89, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+input{ 
+  padding: 6px 12px;
+  border-radius: 6px;
+  box-shadow: 3px 3px 10px rgba(90, 89, 89, 0.55);
+  font-size: 18px;
+  font-weight: 500;
 }
