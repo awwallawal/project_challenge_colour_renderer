@@ -4,25 +4,22 @@ import { useState } from 'react'
 function MainContent() {
 
   const [color, setColor] = useState('');
-  const [changeColor, setChangeColor] = useState('Empty Value')
+
   
  const myName = "Awwal"
- const handleColor = () => {
-  return color
- }
-
- const backColor = {backgroundColor: color}
+ 
+ const backgroundColor = {backgroundColor: color}
 
 
   return (
     <main className='MainContent'>
 
-          <div 
+          <input 
               className='colour-box'
-              style={backColor}
-          >
-            {handleColor()}
-          </div>
+              style={backgroundColor}
+              value={(!color) ? "Empty Value" : color}
+          />
+          
 
           <input 
               type="text"
