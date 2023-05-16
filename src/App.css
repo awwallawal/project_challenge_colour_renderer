@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto-Black.ttf);
+  src: url(./fonts/Roboto-Bold.ttf);
+  src: url(./fonts/Roboto-Light.ttf);
+  src: url(./fonts/Roboto-Medium.ttf);
+  src: url(./fonts/Roboto-Regular.ttf);
+  src: url(./fonts/Roboto-Thin.ttf);
+}
+
+body{
+  font-family: Roboto, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 550px;
+  width: 100%;
+}
+
+.Header{
+  background-color: royalblue;
+  width: 100%;
+}
+
+.MainContent{
+  background-color: papayawhip;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.Footer{
+  background-color: magenta;
+  width: 100%;
+}
